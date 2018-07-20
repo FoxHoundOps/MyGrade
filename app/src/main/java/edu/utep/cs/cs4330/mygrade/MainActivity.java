@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         submitButton = findViewById(R.id.submit_button);
         submitButton.setOnClickListener(this::submitClicked);
 
-        userID.setText("guest");
-        userPIN.setText("1234");
+//        userID.setText("guest");
+//        userPIN.setText("1234");
     }
 
     private void submitClicked(View v) {
