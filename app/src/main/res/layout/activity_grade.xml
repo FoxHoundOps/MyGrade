@@ -6,10 +6,88 @@
     android:layout_height="match_parent"
     tools:context=".GradeActivity">
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="358dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="8dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weighted_total"
+        app:layout_constraintVertical_bias="0.016">
+
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="136dp"
+            android:layout_weight="0"
+            android:text="@string/name_label"
+            app:layout_constraintStart_toStartOf="@+id/grades_list"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/max_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="136dp"
+            android:layout_weight="0"
+            android:text="@string/max_label"
+            app:layout_constraintStart_toEndOf="@+id/name_label"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/earned_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="136dp"
+            android:layout_weight="0"
+            android:text="@string/earned_label"
+            app:layout_constraintStart_toEndOf="@+id/max_title"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/date_generated"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/letter_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/weighted_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/grades_list"
+        android:layout_width="365dp"
+        android:layout_height="279dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
@@ -18,29 +96,9 @@
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.039" />
-
-    <LinearLayout
-        android:id="@+id/grades_table"
-        android:layout_width="354dp"
-        android:layout_height="404dp"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="@+id/date_generated"
-        app:layout_constraintTop_toBottomOf="@+id/date_generated">
-
-        <TextView
-            android:id="@+id/letter_grade"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:id="@+id/weighted_total"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/weighted_total"
+        app:layout_constraintVertical_bias="0.196" />
 
 </android.support.constraint.ConstraintLayout>

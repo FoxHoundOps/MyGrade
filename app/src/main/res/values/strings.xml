@@ -5,14 +5,13 @@
     <string name="submit_button_label">SUBMIT</string>
     <string name="username_hint">user name</string>
     <string name="pin_hint">user pin</string>
-    <string name="null_label">NULL</string>
-    <string name="letter_grade_label"><b>grade:</b></string>
-    <string name="weighted_total_label"><b>w-total:</b></string>
-    <string name="score_max_label">(max: %s)</string>
 
     <string name="date_generated_template"><![CDATA[<i>%s</i>]]></string>
     <string name="grade_template"><![CDATA[<b>grade:</b> %s]]></string>
     <string name="weighted_total_template"><![CDATA[<b>w-total:</b> %d]]></string>
     <string name="score_row_template"><![CDATA[<b>%s:</b> %d (max: %d)]]></string>
     <string name="error_message"><![CDATA[<b>Incorrect userid / pin combination!</b>]]></string>
+    <string name="name_label"><![CDATA[<b>Name</b>]]></string>
+    <string name="max_label"><![CDATA[<b>Max</b>]]></string>
+    <string name="earned_label"><![CDATA[<b>Earned</b>]]></string>
 </resources>
